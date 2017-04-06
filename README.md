@@ -16,6 +16,8 @@ const log = (data) => console.log(data);
 const logwrap = wraptile(log);
 
 window.addEventListener('click', logwrap('click'));
+// every time someone click log
+'click'
 ```
 
 ## Environments
