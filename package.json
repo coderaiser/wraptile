@@ -10,7 +10,7 @@
     "build": "redrun clean 6to5 legacy:*",
     "6to5": "babel -d legacy/lib lib",
     "wisdom": "npm run build",
-    "clean": "rimraf dist/* legacy/*",
+    "clean": "rimraf legacy/*",
     "watcher": "nodemon -w test -w lib --exec",
     "watch:test": "npm run watcher -- npm test",
     "watch:lint": "npm run watcher -- 'npm run lint'",
