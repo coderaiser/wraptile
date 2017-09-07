@@ -30,9 +30,11 @@ var wraptile = require('wraptile/legacy');
 
 ## Related
 
-- [zames](https://github.com/coderaiser/zames "zames") - converts callback-based functions to Promises and apply currying to arguments
+- [zames](https://github.com/coderaiser/zames "zames") - converts callback-based functions to Promises and apply currying to arguments.
+
 - [currify](https://github.com/coderaiser/currify "currify") - translate the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single or more arguments.
 
+- [fullstore](https://github.com/coderaiser/fullstore "fullstore") - functional variables.
 
 ## License
 
