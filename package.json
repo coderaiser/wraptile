@@ -38,7 +38,7 @@
   "homepage": "https://github.com/coderaiser/wraptile",
   "devDependencies": {
     "babel-cli": "^6.1.1",
-    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-env": "^1.6.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.0.0",
     "nodemon": "^1.11.0",
