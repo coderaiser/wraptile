@@ -12,8 +12,7 @@ npm i wraptile --save
 
 ```js
 const wraptile = require('wraptile');
-const log = (data) => console.log(data);
-const logwrap = wraptile(log);
+const log = wraptile((data) => console.log(data));
 
 window.addEventListener('click', logwrap('click'));
 // every time someone click log

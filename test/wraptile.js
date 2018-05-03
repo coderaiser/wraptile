@@ -7,23 +7,22 @@ const sinon = diff(require('sinon'));
 const wraptile = require('..');
 
 test('wraptile: no arguments', t => {
-    t.throws(wraptile, /fn should be function!/, 'should throw when no fn');
+    t.throws(wraptile, /fn should be a function!/, 'should throw when no fn');
     t.end();
 });
 
 test('wraptile: arguments: wrong type', t => {
     const fn  = () => wraptile(1);
    
-    t.throws(fn, /fn should be function/, 'shoud throw when wrong type');
+    t.throws(fn, /fn should be a function/, 'shoud throw when wrong type');
     t.end();
 });
 
 test('wraptile: fn: args: first', t => {
     const fn = sinon.stub();
     const f = wraptile(fn, 'hello');
-    const f1 = f();
     
-    f1();
+    f();
    
     t.ok(fn.calledWith('hello'), 'should set first args');
     t.end();
@@ -54,22 +53,10 @@ test('wraptile: fn: args: third', t => {
 test('wraptile: fn: args: first + second', t => {
     const fn = sinon.stub();
     const f = wraptile(fn, 'hello');
-    const f1 = f('world');
     
-    f1();
-   
+    f('world');
+    
     t.ok(fn.calledWith('hello', 'world'), 'should set first + second args');
-    t.end();
-});
-
-test('wraptile: fn: args: first + second + third', t => {
-    const fn = sinon.stub();
-    const f = wraptile(fn, 'hello');
-    const f1 = f('world');
-    
-    f1('some');
-   
-    t.ok(fn.calledWith('hello', 'world', 'some'), 'should set first + second + third args');
     t.end();
 });
 
