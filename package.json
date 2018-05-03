@@ -1,6 +1,6 @@
 {
   "name": "wraptile",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "translate the evaluation of a function that takes multiple arguments into evaluating a sequence of 2 functions, each with any count of arguments",
   "main": "lib/wraptile.js",
   "scripts": {
