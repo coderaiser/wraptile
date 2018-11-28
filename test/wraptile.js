@@ -1,8 +1,7 @@
 'use strict';
 
 const test = require('tape');
-const diff = require('sinon-called-with-diff');
-const sinon = diff(require('sinon'));
+const stub = require('@cloudcmd/stub');
 
 const wraptile = require('..');
 
@@ -19,7 +18,7 @@ test('wraptile: arguments: wrong type', t => {
 });
 
 test('wraptile: fn: args: first', t => {
-    const fn = sinon.stub();
+    const fn = stub();
     const f = wraptile(fn, 'hello');
     
     f();
@@ -29,7 +28,7 @@ test('wraptile: fn: args: first', t => {
 });
 
 test('wraptile: fn: args: second', t => {
-    const fn = sinon.stub();
+    const fn = stub();
     const f = wraptile(fn);
     const f1 = f('hello');
     
@@ -40,7 +39,7 @@ test('wraptile: fn: args: second', t => {
 });
 
 test('wraptile: fn: args: third', t => {
-    const fn = sinon.stub();
+    const fn = stub();
     const f = wraptile(fn);
     const f1 = f();
     
@@ -51,7 +50,7 @@ test('wraptile: fn: args: third', t => {
 });
 
 test('wraptile: fn: args: first + second', t => {
-    const fn = sinon.stub();
+    const fn = stub();
     const f = wraptile(fn, 'hello');
     
     f('world');
