@@ -19,14 +19,6 @@ window.addEventListener('click', logwrap('click'));
 'click'
 ```
 
-## Environments
-
-In old `node.js` environments that not fully supports `es2015`, `wraptile` could be used with:
-
-```js
-var wraptile = require('wraptile/legacy');
-```
-
 ## Related
 
 - [zames](https://github.com/coderaiser/zames "zames") - converts callback-based functions to Promises and apply currying to arguments.
