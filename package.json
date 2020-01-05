@@ -21,6 +21,12 @@
     "type": "git",
     "url": "git://github.com/coderaiser/wraptile.git"
   },
+  "nyc": {
+    "exclude": [
+      "test",
+      ".*.js"
+    ]
+  },
   "keywords": [
     "wraptile",
     "partial",
