@@ -14,6 +14,6 @@ module.exports = {
     'watch:tape': () => 'nodemon -w test -w lib --exec tape',
     'watch:coverage:base': () => run('watcher', 'nyc npm test'),
     'watch:coverage:tape': () => run('watcher', 'nyc tape'),
-    'watch:coverage': () => 'bin/redrun.js watch:coverage:base',
+    'watch:coverage': () => run('watch:coverage:base'),
 };
 
