@@ -41,5 +41,5 @@ MIT
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 
 [CoverageURL]:              https://coveralls.io/github/coderaiser/wraptile?branch=master
-[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/wraptile/badge.svg?branch=master&service=github
+[CoverageIMGURL]:           https://coveralls.io/repos/github/coderaiser/wraptile/badge.svg?branch=master
 
