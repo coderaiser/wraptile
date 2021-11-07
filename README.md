@@ -1,4 +1,4 @@
-# Wraptile [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
+# Wraptile [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 Translate the evaluation of a function that takes multiple arguments into evaluating a sequence of 2 functions, each with a any count of arguments.
 
@@ -33,11 +33,9 @@ MIT
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/wraptile.svg?style=flat
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/wraptile/master.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/wraptile.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/wraptile "npm"
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/wraptile  "Build Status"
-[DependencyStatusURL]:      https://david-dm.org/coderaiser/wraptile "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 
 [CoverageURL]:              https://coveralls.io/github/coderaiser/wraptile?branch=master
